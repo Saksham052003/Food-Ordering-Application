@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/background_border">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewDish"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewDishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/imageViewDish"
+        android:layout_alignTop="@+id/imageViewDish" />
+
+    <TextView
+        android:id="@+id/textViewAboutDish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Dish"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/imageViewDish"
+        android:layout_below="@+id/textViewDishName"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewSpeciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speciality"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/imageViewDish"
+        android:layout_below="@+id/textViewAboutDish"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/imageViewDish"
+        android:layout_below="@+id/textViewSpeciality"
+        android:layout_marginTop="4dp" />
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:text="Price"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/imageViewDish"
+        android:layout_below="@+id/textViewPrice"
+        android:layout_marginTop="4dp" />
+
+
+</RelativeLayout>

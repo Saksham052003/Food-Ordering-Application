@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cartfregmentitemimage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/bg4"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/cartfregmentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cartfregmentitemimage"
+        android:layout_alignTop="@+id/cartfregmentitemimage"
+        android:text="Item Name"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/cartfregmentitemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cartfregmentitemimage"
+        android:layout_below="@+id/cartfregmentname"
+        android:text="Price"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay"
+        android:layout_toEndOf="@+id/cartfregmentitemimage"
+        android:layout_below="@+id/cartfregmentitemprice"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp">
+
+        <Button
+            android:id="@+id/decrease_quantity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/cartfregmentitemquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Quantity"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/increase_quantity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay2"
+        android:layout_toEndOf="@+id/cartfregmentitemimage"
+        android:layout_below="@+id/lay"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp">
+    <Button
+        android:id="@+id/remove_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

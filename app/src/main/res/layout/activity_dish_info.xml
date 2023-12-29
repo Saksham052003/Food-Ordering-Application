@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantApp.DishInfoActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="732dp"
+        android:foreground="@drawable/design"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg4" />
+
+    <ImageView
+        android:id="@+id/dishImage"
+        android:layout_width="94dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information about dish."
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/aboutDish"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="About Dish"
+        android:inputType="text"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#929292"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishName"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/dishName"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="Dish Name"
+        android:inputType="text"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#929292"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishImage"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <EditText
+        android:id="@+id/specialty"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="Specialty"
+        android:inputType="text"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#929292"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutDish"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="Price of Dish"
+        android:inputType="number"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#929292"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specialty"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/IDofDish"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="268dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="Dish ID "
+        android:inputType="number"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#929292"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/saveDish"
+        android:layout_width="276dp"
+        android:layout_height="54dp"
+        android:background="@drawable/btn_design"
+        android:text="Save Dish"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDofDish"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <Button
+        android:id="@+id/browseImage"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_design"
+        android:text="Browse Image"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ViewDish"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveDish"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/ViewDish"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="DishNext"
+        android:background="@drawable/btn_design"
+        android:text="@string/see_the_list_of_dishes"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveDish"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/LogoutToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:onClick="Logout"
+        android:text="LogOut"
+        android:textColor="#F60B0B"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewDish"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
